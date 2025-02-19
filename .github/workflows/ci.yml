@@ -1,6 +1,9 @@
-name: CI
+name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches:
+      - develop
   pull_request:
     types:
       - opened
@@ -40,3 +43,9 @@ jobs:
 
       - name: "🚀 Build the project"
         run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
