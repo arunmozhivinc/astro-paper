@@ -10,6 +10,7 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   base: "/astro-paper/",
+  output: 'static',
   integrations: [
     tailwind({
       applyBaseStyles: false,
