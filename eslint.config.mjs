@@ -7,6 +7,7 @@ import eslintPluginAstro from "eslint-plugin-astro";
 export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
+  ...tseslint.configs.strict, // Stricter TypeScript rules
   ...eslintPluginAstro.configs.recommended,
   {
     languageOptions: {
@@ -39,6 +40,6 @@ export default [
     },
   },
   {
-    ignores: ["dist/**", ".astro"],
+    ignores: ["dist/**", ".astro/**"], // Corrected ignore paths
   },
 ];
