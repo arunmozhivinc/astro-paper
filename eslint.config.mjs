@@ -38,8 +38,7 @@ export default [
       "@typescript-eslint/no-unused-expressions": "off",
     },
   },
-{
-  ignores: ["dist/**", ".astro/**"],
-}
-
+  {
+    ignores: ["dist/**", ".astro"],
+  },
 ];
