@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://arunmozhivinc.github.io/astro-paper/sitemap-index.xml
+Sitemap: https://arunmozhivinc.github.io/sitemap-index.xml
