@@ -10,7 +10,7 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   base: "/astro-paper/",
-  outDir: "dist",
+  // outDir: "dist",
   // output: "static",
   integrations: [
     tailwind({
